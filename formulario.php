@@ -7,6 +7,10 @@
     }else{
         $nombre = $_POST["nombre"];
         $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
+        $nombre = trim($nombre);
+        if($nombre==''){
+            $nombre .= "El nombre está vacio</br>";
+        }
     }
     //VALIDANDO EMAIL
     if(empty($_POST["email"])){
@@ -25,6 +29,10 @@
     }else{
         $mensaje = $_POST["mensaje"];
         $mensaje = filter_var($mensaje, FILTER_SANITIZE_STRING);
+        $mensaje = trim($mensaje);
+        if($mensaje==''){
+            $mensaje .= "El mensaje está vacio</br>";
+        }
     }
     
     //CUERPO DEL MENSAJE
