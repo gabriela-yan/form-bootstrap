@@ -31,7 +31,7 @@
     $cuerpo = 'E-mail: '.$email.'\n';
     $cuerpo = 'Mensaje: '.$mensaje.'\n';
 
-    $enviarA = 'gery.yanez.2828@gmail.com';
+    $enviarA = 'mi_correo@mi_correo.com';
     $asunto = 'Nuevo mensaje de mi sitio web';
 
     if($error == ''){
